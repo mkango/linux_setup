@@ -6,6 +6,7 @@ sudo chown -R $USER:$USER /opt/jackett
 
 sudo docker run -d \
 --name=jackett \
+--net=host \
 -e PUID=1000 \
 -e PGID=1000 \
 -p 9117:9117 \
