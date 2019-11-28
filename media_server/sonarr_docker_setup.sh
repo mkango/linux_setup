@@ -14,5 +14,5 @@ sudo docker run -d \
 -e PGID=1000 \
 -v /opt/sonarr:/config \
 -v /mnt/Media/TV_Shows:/tv \
--v /mnt/Media/Downloads:/downloads \
+-v $HOME/Downloads:/downloads \
 linuxserver/sonarr
